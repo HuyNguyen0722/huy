@@ -1,0 +1,49 @@
+/* src/styles/reset.scss */
+:root{
+  --body_background: white;
+  --body-color: black;
+  --link-color: navy;
+}
+
+[date-theme="dark"]{
+  --body_background: #282c34;
+  --body-color: white;
+  --link-color: cyan;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+button, input, textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
