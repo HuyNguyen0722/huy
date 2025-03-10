@@ -1,5 +1,14 @@
 .container {
-  width: 65%;
+  width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
   background-color: lightcoral;
+  padding: 0 10px;
+  .container-center{
+    width: 80%;
+  }
+  .container-right{
+    width: 20%;
+  }
 }
