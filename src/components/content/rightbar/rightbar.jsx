@@ -8,6 +8,7 @@ import logo from '../../../assets/logo.jpg';
 import bgImage from '../../../assets/background.jpg';
 import Music from '../../content/rightbar/music/music'
 import { Link } from "react-router-dom";
+import Weather from "./weather/weather";
 const cx = classNames.bind(styles);
 
 function Rightbar() {
@@ -44,11 +45,14 @@ function Rightbar() {
                         ))}
                     </ul>
                 </div>
+                <div className={cx("weather-forecast")}>
+                    <Weather />
+                </div>
             </div>
             <div className={cx("music-player")}>
                 <Music />
             </div>
-        </div>
+        </div >
     );
 }
 
